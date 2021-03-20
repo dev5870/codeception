@@ -1,0 +1,9 @@
+class_name: AcceptanceTester
+modules:
+    enabled:
+        - PhpBrowser:
+            url: http://youtube.test
+        - Yii2:
+            part: orm
+            entryScript: index-test.php
+            cleanup: false
