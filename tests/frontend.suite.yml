@@ -1,8 +1,11 @@
 class_name: AcceptanceTester
 modules:
     enabled:
-        - PhpBrowser:
+        - WebDriver:
             url: http://youtube.test
+            browser: firefox
+            window_size: maximize
+            path: ''
         - Yii2:
             part: orm
             entryScript: index-test.php
