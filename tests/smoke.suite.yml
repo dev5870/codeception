@@ -1,9 +1,13 @@
 class_name: AcceptanceTester
 modules:
     enabled:
+        - Db:
+            dsn: 'mysql:host=localhost;dbname=youtube_codeception'
+            user: 'youtube_codeception'
+            password: '12345'
         - PhpBrowser:
             url: http://youtube.test
         - Yii2:
             part: orm
-            entryScript: index-test.php
+            entryScript: index.php
             cleanup: false
