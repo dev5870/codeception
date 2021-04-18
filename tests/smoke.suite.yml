@@ -1,6 +1,7 @@
 class_name: AcceptanceTester
 modules:
     enabled:
+        - Helper\Hello
         - Db:
             dsn: 'mysql:host=localhost;dbname=youtube_codeception'
             user: 'youtube_codeception'
