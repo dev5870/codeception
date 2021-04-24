@@ -1,0 +1,12 @@
+class_name: ApiTester
+modules:
+   enabled:
+       - REST:
+           depends: PhpBrowser
+           url: &url 'https://reqres.in/' # you only need the &url anchor for further PhpBrowser configs
+           shortDebugResponse: 300 # only the first 300 chars of the response
+   config:
+       PhpBrowser:
+           url: *url # repeats the URL from the REST module; not needed if you don't have further settings like below
+           headers:
+               Content-Type: application/json
